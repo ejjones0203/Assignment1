@@ -9,6 +9,7 @@
 buffer = ""
 
 Running = True
+#this lets it run forever
 
 while Running:
     print("\n")
@@ -19,16 +20,18 @@ while Running:
 
     selection = input("Select from the menu above using 1-4: ")
 
+    #menu selection with input
+
     if selection == '1':
-        x = input("Enter the string to append: ")
+        x = input("Enter the string to append: ") #adds input to buffer
         buffer += x
     elif selection == '2':
         buffer = ""
-        print("Buffer is cleared")
+        print("Buffer is cleared") #clears buffer
     elif selection == '3':
-        print(f'The current input buffer: {buffer}')
+        print(f'The current input buffer: {buffer}') #displays current input buffer with f string use
     elif selection == '4':
-        print("Ok, exiting the program now.")
+        print("Ok, exiting the program now.") #leaves the program
         break
     else:
-        print("Please select a valid choice")
+        print("Please select a valid choice") #select a valid choice
